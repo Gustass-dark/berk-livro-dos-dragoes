@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#071e23">
+    <meta name="description" content="Explore Berk: um guia de fã com doze dragões, suas habilidades e histórias.">
+    <title>Berk — Livro dos Dragões</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dados.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header>
+      <a class="brand" href="index.html" aria-label="Berk, início"><img class="sigil" src="imagens/berk-symbol.webp" alt=""> BERK<span class="brand-small">UM MUNDO ALÉM DO HORIZONTE</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#dragoes">Dragões</a><a href="#quiz">Quiz</a><a href="#sobre">Sobre</a><button id="nav-favorites">♡ <span>Favoritos</span> <b id="fav-count">0</b></button>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <section id="inicio" class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">BEM-VINDO À ILHA DE BERK</p>
+          <h1>Todo dragão tem<br>uma <em>história.</em></h1>
+          <p class="hero-text">Algumas começam com uma batalha.<br>As melhores começam com uma amizade.</p>
+          <a class="button primary" href="#dragoes">Conheça os dragões <span>↗</span></a>
+          <div class="hero-note">
+            <span>12</span> dragões extraordinários.<br>Um universo para descobrir.
+          </div>
+        </div>
+        <span class="hero-caption">GUIA DE FÃ • COMO TREINAR O SEU DRAGÃO</span>
+      </section>
+      <section class="intro">
+        <span class="eyebrow">ENTRE VIKINGS E DRAGÕES</span><h2>Mais do que uma ilha.<br>Um lugar para pertencer.</h2>
+        <p>Berk é onde o improvável se torna amizade. Abra o Livro dos Dragões e conheça as criaturas que transformaram o mundo de Soluço — dos companheiros mais leais aos gigantes mais misteriosos.</p>
+      </section>
+      <section id="dragoes" class="catalog">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">EXPLORE. DESCUBRA. ESCOLHA SEU FAVORITO.</p>
+            <h2>O Livro dos Dragões<span>.</span></h2>
+          </div>
+          <button id="surprise" class="outline surprise">✦ Surpreenda-me</button>
+        </div>
+        <div class="toolbar">
+          <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Busque um nome ou espécie…" aria-label="Buscar dragões por nome ou espécie"></label><button id="only-favorites" class="outline" aria-pressed="false">♡ Meus favoritos</button>
+        </div>
+        <div class="filters" aria-label="Filtrar por classe">
+        </div>
+        <div class="results-line">
+          <p id="result-count" role="status" aria-live="polite"></p>
+          <button id="clear" class="text-button">Limpar filtros ↺</button>
+        </div>
+        <div id="grid" class="grid">
+        </div>
+        <div id="empty" hidden>
+          <h3>Nenhum dragão por aqui…</h3>
+          <p>Tente outra busca ou salve um dragão nos seus favoritos.</p>
+          <button id="reset-empty" class="button primary">Mostrar todos</button>
+        </div>
+      </section>
+      <section id="quiz" class="quiz-section" aria-labelledby="quiz-title">
+        <div class="quiz-intro">
+          <p class="eyebrow">SEU PRÓXIMO DESAFIO</p>
+          <h2 id="quiz-title">Você conhece<br>os dragões de Berk?</h2>
+          <p>Explore o catálogo e teste sua memória. São cinco perguntas, com a resposta explicada a cada rodada.</p>
+          <span class="quiz-badge">5 PERGUNTAS • SEM CRONÔMETRO</span>
+        </div>
+        <div class="quiz-panel">
+          <p id="quiz-progress" class="eyebrow"></p>
+          <div class="quiz-track" aria-hidden="true">
+            <span id="quiz-bar"></span>
+          </div>
+          <h3 id="quiz-question" tabindex="-1"></h3>
+          <div id="quiz-options" class="quiz-options">
+          </div>
+          <p id="quiz-feedback" role="status" aria-live="polite"></p>
+          <button id="quiz-next" class="button primary" hidden>Próxima pergunta →</button>
+        </div>
+      </section>
+      <section id="sobre" class="about-section" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">QUEM ESTÁ POR TRÁS DE BERK</p>
+          <h2 id="about-title">Gustavo Mesquita.<br><em>Um fã, muitas histórias.</em></h2>
+        </div>
+        <div>
+          <p>Sou Gustavo, estudante de Engenharia de Software e fã de Como Treinar o Seu Dragão. A amizade entre Soluço e Banguela é uma das razões pelas quais essa trilogia está entre as minhas favoritas.</p>
+          <p>Criei Berk para reunir esse interesse em um projeto de desenvolvimento front-end: um espaço para conhecer dragões, explorar suas histórias e escolher seus favoritos.</p>
+          <a class="outline about-link" href="https://github.com/Gustass-dark" target="_blank" rel="noopener noreferrer">Conheça meu GitHub ↗</a>
+        </div>
+      </section>
+      <section class="quote">
+        <p>Um novo olhar muda<br><em>toda uma história.</em></p>
+        <span>DE BERK PARA ALÉM DO HORIZONTE</span>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="#inicio"><img class="sigil" src="imagens/berk-symbol.webp" alt=""> BERK</a><p>Projeto acadêmico de front-end • Gustavo Mesquita<br>Site de fã não oficial. Personagens e franquia pertencem aos respectivos titulares.</p>
+      <a href="html/creditos.html">Créditos e fontes ↗</a>
+    </footer>
+    <dialog id="details" aria-labelledby="detail-title">
+      <button class="close" aria-label="Fechar detalhes">✕</button>
+      <div id="detail-content">
+        <div class="detail-layout">
+          <img id="detail-image" alt="">
+          <div>
+            <span id="detail-group" class="class-label"></span><h2 id="detail-title"></h2>
+            <p><strong id="detail-tagline"></strong></p>
+            <p id="detail-description"></p>
+            <dl>
+              <dt>Espécie</dt>
+              <dd id="detail-species"></dd>
+              <dt>Habilidade em destaque</dt>
+              <dd id="detail-power"></dd>
+              <dt>Companheiro / vínculo</dt>
+              <dd id="detail-rider"></dd>
+            </dl>
+            <button id="detail-favorite" class="button primary"></button>
+          </div>
+        </div>
+      </div>
+      <div class="detail-navigation">
+        <button id="previous-dragon" class="outline" aria-label="Dragão anterior">← Anterior</button>
+        <span id="detail-position" role="status" aria-live="polite"></span><button id="next-dragon" class="outline" aria-label="Próximo dragão">Próximo →</button>
+      </div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite">
+    </div>
+  </body>
+</html>
