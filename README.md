@@ -1,5 +1,7 @@
 # Berk — Livro dos Dragões
 
+**[Abrir o site](https://gustass-dark.github.io/berk-livro-dos-dragoes/index.html)**
+
 Projeto acadêmico de front-end de Gustavo Mesquita. Site sobre meu hobby: início, catálogo de 12 dragões, quiz e apresentação pessoal.
 
 ## Organização
